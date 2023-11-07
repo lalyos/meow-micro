@@ -24,5 +24,5 @@ push:
 
 .PHONY: install
 install:
-	helm repo add meow   git+https://github.com/diazjf/meow-micro@/helm?ref=main
+	helm repo add meow   git+https://github.com/lalyos/meow-micro@/helm?ref=main
 	helm upgrade -i meow-micro meow/meow-micro --values https://raw.githubusercontent.com/diazjf/meow-micro/main/helm/Values.yaml --set server.image=$(SERVER_IMAGE) --set client.image=$(CLIENT_IMAGE)

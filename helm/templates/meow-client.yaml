@@ -50,10 +50,11 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - http:
+  - host: meow.k8z.eu
+    http:
       paths:
-      - path: /meow
-        pathType: Prefix
+      - path: /
+        pathType: ImplementationSpecific
         backend:
           service:
             name: meow-client-rest-svc
