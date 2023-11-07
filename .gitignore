@@ -1,3 +1,7 @@
+.vscode/
+meow-client
+meow-server
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
